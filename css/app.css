@@ -1,11 +1,7 @@
-body {
-  padding-top: 50px;
-}
-.starter-template {
-  padding: 40px 15px;
-  text-align: center;
-}
-.modal-body {
-	max-height:450px;
-	overflow-y:auto;
-}
+body {   padding-top: 50px; margin: 0; font-size: 13px; line-height: 1.231; font-family: 'Raleway', sans-serif; }
+
+body, button, input, select, textarea { font-family: 'Raleway', sans-serif; color: #222; }
+
+.starter-template { padding: 40px 15px; text-align: center; }
+
+.modal-body { max-height:450px; overflow-y:auto; }
