@@ -1,3 +1,9 @@
+// Image hover with bottom caption & caption
+$("[rel='tooltip']").tooltip(); 
+
+$('#hover-img .thumbnail').hover( function () { $(this).find('.caption').slideDown(250); $(this).find('.caption-btm').hide(250);
+}, function () { $(this).find('.caption').slideUp(250); $(this).find('.caption-btm').show(250); });
+
 // Google Analytics
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
