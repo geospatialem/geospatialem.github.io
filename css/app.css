@@ -1,7 +1,17 @@
-body {   padding-top: 50px; margin: 0; font-size: 13px; line-height: 1.231; font-family: 'Raleway', sans-serif; }
+body { padding-top: 50px; margin: 0; font-size: 13px; line-height: 1.231; font-family: 'Raleway', sans-serif; }
 
 body, button, input, select, textarea { font-family: 'Raleway', sans-serif; color: #222; }
 
 .starter-template { padding: 40px 15px; text-align: center; }
 
 .modal-body { max-height:450px; overflow-y:auto; }
+
+#hover-img .thumbnail { position: relative; overflow: hidden; }
+
+#hover-img .caption { display: none; text-align: center; position: absolute; top: 0; left: 0; background: rgba(0, 0, 0, 0.4); width: 100%; height: 100%; color: #fff !important; }
+
+#hover-img .caption p { padding: 6px; }
+
+#hover-img .caption-btm { background: rgba(0, 0, 0, 0.6); width: 90%; height: 40px; position: absolute; bottom: 4px; color: #fff; display: table; width: 100%; }
+    
+#hover-img .caption-btm p { text-align: center; font-size: 1.17em; display: table-cell; vertical-align: middle; }
