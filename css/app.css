@@ -1,8 +1,22 @@
-body { padding-top: 50px; margin: 0; font-size: 13px; line-height: 1.231; font-family: 'Raleway', sans-serif; }
+body { margin: 0; font-size: 13px; line-height: 1.231; font-family: 'Raleway', sans-serif; }
 
 body, button, input, select, textarea { font-family: 'Raleway', sans-serif; color: #222; }
 
-.starter-template { padding: 40px 15px; text-align: center; }
+.nav { background: rgba(255,255,255,.1); height: 60px; line-height: 60px; }
+
+.nav a { color: #333; font-size: 12px; font-weight: bold; padding: 14px 10px; text-shadow: 2px 2px 0 rgba(0,0,0,.15); }
+
+.nav a:hover { text-decoration: none; }
+
+.nav li { display: inline; padding: 10px; }
+
+.jumbotron { background-image:url('http://goo.gl/7lndgK'); height: 700px; background-repeat: no-repeat; background-size: cover; }
+
+.jumbotron h1 { text-shadow: 2px 2px 0 rgba(0,0,0,.15); color: #fff; font-size: 30px; font-family: 'Railway', sans-serif; font-weight: bold; padding: 50px; position: relative; }
+
+.jumbotron .container p { text-shadow: 2px 2px 0 rgba(0,0,0,.15); font-family: 'Railway', sans-serif; font-size: 20px; color: #fff; padding: 50px; position: relative; }
+
+.container .projects { padding: 40px 15px; text-align: center; }
 
 .modal-body { max-height:450px; overflow-y:auto; }
 
