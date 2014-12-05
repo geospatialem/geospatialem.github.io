@@ -23,58 +23,40 @@
     <![endif]-->
   </head>
 
-  <body>    
-  <div class="jumbotron">
-        <div class="nav">
-        		<div class="pull-left">
-        			<!-- Home -->
-        		    <li><a href="#"><font color="#fff" size="15">Kitty Hurley</font></a></li>
-        		</div>
-        		
-        		<ul class="pull-right">  
-        		    <!-- About -->
-        		    <li><a href="#about"><font color="#fff">About</font></a></li>
-        		    
-        		    <!-- Projects -->
-					<li><a href="#projects"><font color="#fff">Projects</font></a></li>    
-					    
-          			<!-- Twitter -->
-          			<li><a href="http://twitter.com/geospatialem">
-          			<span class="fa-stack fa">
-          			<i class="fa fa-circle fa-stack-2x"></i>
-          			<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-          			</span></a></li>
-          
-          			<!-- LinkedIn -->
-          			<li><a href="http://linkedin.com/in/khurley">
-          			<span class="fa-stack fa">
-          			<i class="fa fa-circle fa-stack-2x"></i>
-          			<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-          			</span></a></li>
+  <body>  
+  
+<div id="wrapper" class="active">
       
-          			<!-- WordPress -->
-          			<li><a href="http://geospatialresponse.wordpress.com">
-          			<span class="fa-stack fa">
-          			<i class="fa fa-circle fa-stack-2x"></i>
-          			<i class="fa fa-wordpress fa-stack-1x fa-inverse"></i>
-          			</span></a></li>      
-          			
-          			<!-- Github -->
-          			<li><a href="http://github.com/geospatialem">
-          			<span class="fa-stack fa">
-          			<i class="fa fa-circle fa-stack-2x"></i>
-          			<i class="fa fa-github fa-stack-1x fa-inverse"></i>
-          			</span></a></li>
-          			    
-        		</ul>
-    	</div>
+      <!-- Sidebar -->
+            <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+      <ul id="sidebar_menu" class="sidebar-nav">
+           <li class="sidebar-brand"><a id="menu-toggle" href="#">Kitty Hurley<span id="main_icon" class="glyphicon glyphicon-align-justify"></span></a></li>
+      </ul>
+        <ul class="sidebar-nav" id="sidebar">     
+          <li><a href="#about"><span class="sub_icon"><i class="fa fa-info-circle"></i></span></a></li>
+          <li><a href="#projects"><span class="sub_icon"><i class="fa fa-folder-open"></i></span></a></li>
+          <!-- Blog --><li><a href="http://geospatialresponse.wordpress.com"><span class="sub_icon"><i class="fa fa-newspaper-o"></i></span></a></li>
+        </ul>
+      </div>
+          
+      <!-- Page content -->
+      <div id="page-content-wrapper">
+        <!-- Keep all page content within the page-content inset div! -->
+        <div class="page-content inset">
+          <div class="jumbotron">
+                <div class="container">
+        	<h1>cartographer, <br/>
+        	developer + <br />
+        	analyst</h1>
+      </div>
+  </div> 
+          <div class="row">
+              <div class="col-md-12">
 
-      		<div class="container">
-        		<h1>cartographer, <br/>
-        		developer + <br />
-        		analyst</h1>
-      		</div>
-        </div> 
+
+
+
 
     <div class="container">
     	<h1 id="about">About</h1><br /><br />
@@ -85,7 +67,8 @@
          	spotted hitting wrist shots on the ice as an assistant goalie coach with the Orono Spartans girls 
          	high school hockey team.</p>
     </div><br /><br />
-            	
+
+
       <div class="container">
       	<h1 id="projects">Projects</h1>
   		
@@ -93,7 +76,7 @@
 
   <div class="projects" id="hover-img">
     <div class="row"> 	
-		<div class="col-sm-6 col-md-4"> <!-- Project 1: 2015 MN GIS/LIS Conference Map -->
+		<div class="col-sm-6 col-md-4">
 			<a href="http://geospatialem.github.io/conference-map" class="thumbnail">
                 <div class="caption">
                     <p><b>2015 Minnesota GIS/LIS Conference Map</b><br /><br />
@@ -103,7 +86,7 @@
                 <img src="https://cloud.githubusercontent.com/assets/5023024/4966607/e7adaebc-67d4-11e4-983b-ad97c8db2d09.PNG" alt="Project Name"/>
 			</a>
         </div>		
-		<div class="col-sm-6 col-md-4"> <!-- Project 2 -->
+		<div class="col-sm-6 col-md-4">
 			<a href="http://geospatialem.github.io/geogeeks-learn-js" class="thumbnail">
                 <div class="caption">
                     <p><b>Geogeeks Learn JavaScript</b><br /><br />
@@ -114,7 +97,7 @@
                 <img src="https://cloud.githubusercontent.com/assets/5023024/4987889/95a33d2a-691f-11e4-9d38-0b173859934e.png" alt="Project Name"/>
 			</a>
         </div>		
-		<div class="col-sm-6 col-md-4"> <!-- Project 3 -->
+		<div class="col-sm-6 col-md-4">
 			<a href="#" class="thumbnail">
                 <div class="caption">
                     <p>...</p>
@@ -125,19 +108,14 @@
         </div>			
     </div>
 </div> <!-- .Project Thumbnails -->
-        
-        <p class="lead">
-        </p>
-        
+
+
+            </div>
+          </div>
+        </div>
       </div>
       
-      <hr></hr>
-      
-      <p style="text-align:left;">
-      <!-- copyright -->
-      <i class="fa fa-copyright"></i> 2014 Kitty Hurley
-
-    </div><!-- /.container -->
+    </div>
 
 
     <!-- Bootstrap core JavaScript
