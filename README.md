@@ -1,3 +1,3 @@
-geospatialem.github.io
+<a href="http://geospatialem.github.io">Kitty's Project Homepage</a>
 ======================
-<a href="http://geospatialem.github.io">Website</a>! :-)
+:-)
