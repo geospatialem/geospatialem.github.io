@@ -1,5 +1,9 @@
 function show() { 
-    $('#page-content-wrapper').css('visibility','visible');
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+		//$('#desktop-content-wrapper').css('visibility','visible');
+	} else {
+		$('#desktop-content-wrapper').css('visibility','visible');
+	}
 };
 //TODO cleanup
 window.onload = function(){
@@ -56,6 +60,13 @@ show();
         $("#wrapper").toggleClass("active");
         $('.side_name').toggleClass("active");
     });
+    
+    //Slidebar
+	(function($) {
+		$(document).ready(function() {
+			$.slidebars();
+		});
+	}) (jQuery);
       
    // Image hover with bottom caption & caption
       $("[rel='tooltip']").tooltip(); 
