@@ -88,9 +88,10 @@ h1, h2, h3, h4, h5, p { font-family: 'Raleway', sans-serif; }
 #mainHeader p.lead {
 	position: absolute;
 	right: 10px;
-	color: #fff;
+	color: #F5F5F5;
 	text-align: right;
 	font-weight: bold;
+	text-shadow: 1px 1px #767676;
 }
 .navbar-default {
 	background-color: #000;
