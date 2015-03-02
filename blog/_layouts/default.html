@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+    <body>
+      <div id="ribbon"></div>
+      <div id="wrap">
+        {% include header.html %}
+        {{ content }}
+      </div>
+      {% include footer.html %}
+      <script type="text/javascript" src="{{ site.baseurl }}/js/travelog.js"></script>
+    </body>
+</html>

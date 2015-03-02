@@ -1,0 +1,96 @@
+@import "modules/about/variables";
+@mixin travelog-about {
+    .about {
+        width: $about-width;
+        margin: 0 auto;
+        // For iOS Safari support
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-wrap {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .about-avatar {
+        transition-property: margin;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+        border-radius: 100%;
+        overflow: hidden;
+        margin-right: 30px;
+        border: 3px solid #fff;
+    }
+
+    .about-body {
+        font-family: $title-font;
+        width: $about-body-width;
+        color: $inverse-text-colour;
+    }
+
+    .about-body-title {
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgba(229, 229, 229, 0.5);
+        margin: 0 0 10px;
+        letter-spacing: 1px;
+    }
+
+    .about-body-description {
+        font-size: $caption-text-size;
+        letter-spacing: 1px;
+        line-height: $about-body-description-line-height;
+    }
+
+    .about-body-link {
+        color: $inverse-text-colour;
+        font-size: $caption-text-size;
+        font-weight: bold;
+        margin-bottom: 7px;
+        display: inline-block;
+
+        &:hover {
+            color: $link-colour-over;
+        }
+
+        img { 
+            margin-right: 5px; 
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    @media only screen and (max-width : 500px) {
+        .about-avatar { margin-right: 20px; }
+    }
+
+    @media only screen and (max-width : ($about-width + 10px)) {
+        .about-avatar,
+        .about-body {
+            float: none;
+            text-align: center;
+        }
+
+        .about-avatar {
+            margin: 0;
+            width: $about-avatar-shrunk-width;
+            height: $about-avatar-shrunk-height;
+        }
+
+        .about-body {
+            width: 80%;
+            margin: 10px auto 0;
+        }
+
+        .about {
+            display: block;
+            margin: 0;
+            text-align: center;
+            width: 100%;
+        }
+    }
+}
