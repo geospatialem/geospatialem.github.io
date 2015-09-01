@@ -9,3 +9,5 @@ Where project content lives + breathes.
 3. <a href="http://geospatialem.github.io/Turf.js-Fun">Introduction to Turf.js</a>
 4. <a href="http://geospatialem.github.io/healthy-map">Healthy Map</a>
 5. <a href="https://github.com/geospatialem/geospatial-institutions">Geospatial Institutions</a>
+6. <a href="http://geospatialem.github.io/mngislis-attendees">MN GIS/LIS Attendees<a/>
+7. <a href="http://geospatialem.github.io/leaflet-interactive-template">Interactive Leaflet Template</a>
