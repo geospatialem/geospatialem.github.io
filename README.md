@@ -11,3 +11,4 @@ Where project content lives + breathes.
 5. <a href="https://github.com/geospatialem/geospatial-institutions">Geospatial Institutions</a>
 6. <a href="http://geospatialem.github.io/mngislis-attendees">MN GIS/LIS Attendees<a/>
 7. <a href="http://geospatialem.github.io/leaflet-interactive-template">Interactive Leaflet Template</a>
+8. <a href="http://geospatialem.github.io/alaska-travels">Alaska Vacation Highlights</a>
