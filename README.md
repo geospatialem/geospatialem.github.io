@@ -1,9 +1,9 @@
-<a href="http://geospatialem.github.io">geospatialem.github.io</a>
+<a href="http://geospatialem.github.io">Homepage</a>
 ======================
 
 Where project content lives + breathes.
 
-##Projects
+## Projects
 1. <a href="http://geospatialem.github.io/conference-map">2015 Minnesota GIS/LIS Conference Map</a>
 2. <a href="http://geospatialem.github.io/geogeeks-learn-js">Geogeeks Learn JavaScript</a>
 3. <a href="http://geospatialem.github.io/Turf.js-Fun">Introduction to Turf.js</a>
@@ -12,3 +12,4 @@ Where project content lives + breathes.
 6. <a href="http://geospatialem.github.io/mngislis-attendees">MN GIS/LIS Attendees<a/>
 7. <a href="http://geospatialem.github.io/leaflet-interactive-template">Interactive Leaflet Template</a>
 8. <a href="http://geospatialem.github.io/alaska-travels">Alaska Vacation Highlights</a>
+9. <a href="http://geospatialem.github.io/mapbox-styles">Mapbox Styles</a>
