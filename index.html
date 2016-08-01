@@ -1,236 +1,184 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Kitty Hurley, GISP</title>
+		<title>Kitty Hurley</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<meta name="author" content="Kitty Hurley">
 
-		<link href="css/bootstrap.css" rel="stylesheet">
-		<link href="css/font-awesome.min.css" rel="stylesheet">
-		<link href="css/slidebars.min.css" rel="stylesheet">
-    	<link href="css/app.css" rel="stylesheet">
-		<!-- Shims -->
-		<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-			<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-		<![endif]-->
+		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<script src="//use.fontawesome.com/038f99973d.js"></script>
+    <link href="css/app.css" rel="stylesheet">
 	</head>
 
-	<body id="top">
+	<body>
 
-		<!-- Navbar -->
-		<nav class="navbar navbar-default navbar-fixed-top sb-slide" role="navigation">
-			<!-- Left Control -->
-			<div class="sb-toggle-left navbar-left">
-				<div class="navicon-line"></div>
-				<div class="navicon-line"></div>
-				<div class="navicon-line"></div>
-			</div><!-- /.sb-control-left -->
+		<!--Header-->
+		<header class="text-center">
+		  <nav class="navbar navbar-default navbar-fixed-top"><!--Nav-->
+				<div class="container-fluid"><!--Bootstap container-->
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"><!--Hamburger menu button-->
+		        <span class="sr-only">Toggle navigation</span>
+						<span>menu</span>
+						<span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+	        </button><!--/Hamburger menu button-->
+	    		<div class="collapse navbar-collapse" id="navbar"><!--Collapse navbar-->
+	      		<ul class="nav navbar-nav">
+							<li><a href="#about">About</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</div><!--/Collapse navbar-->
+		    </div><!--/Bootstrap container-->
+		  </nav><!--/Nav-->
+			<div class="jumbotron"><!--Jumbotron-->
+				<h1>Kitty Hurley</h1>
+				<p class="lead">GIS Web Developer &amp; Cartographer</p>
+			</div><!--/Jumbotron-->
+		</header><!--/header-->
 
-				<!-- Logo -->
-				<div id="logo" class="navbar-left">
-					Kitty Hurley, GISP
-				</div><!-- /#logo -->
-		</nav>
-
-		<!-- Site -->
-		<div id="sb-site">
-
-			<!-- Main Header -->
-			<div id="mainHeader">
-					<div id="mainHeader-img"></div>
-					<p class="lead">gis developer, cartographer & analyst.</p>
-			</div>
-
-
-			<!-- Site -->
-			<div class="container">
-
-						<!-- About Section -->
-						<div id="aboutMe">
-							<div class="col-xs-12">
-								<h1>About</h1>
-									<p>Kitty is a GIS developer focused on UI/UX, cartographic design, mobile environments,
-									and web accessibility. She is a co-organizer of MaptimeMSP, likes to hike, and travel
-									in her free time.</p>
-
-      	    					<div class="well well-sm pull-left">
-      	    						<p><i class="fa fa-globe"></i>&nbsp;&nbsp;Saint Paul, Minnesota</p>
-      	  							<i class="fa fa-tag"></i>&nbsp;&nbsp;Accessibility, Cartography, Hockey, JavaScript.
-      	    					</div>
-
-							</div><!-- /.col-xs-12 -->
-						</div><!-- /#aboutMe -->
-
-						<!-- Projects Section -->
-							<div id="projects" class="col-xs-12">
-								<h1>Projects</h1>
+	<!--About section-->
+		<section id="about">
+			<div class="container"><!--Bootstrap container-->
+					<div class="row"><!--Bootstrap row-->
+						<div class="col-md-3"><!--Column title-->
+							<h2>About</h2>
+						</div><!--/Column title-->
+						<div class="col-md-9"><!--Column subheading-->
+							<div class="row"><!--Column subheading row-->
+							<div class="col-sm-8">
+								<p>Kitty is a front-end geospatial applications developer focused on UI/UX, cartographic design, mobile environments,
+									and web accessibility. She has over eight years of progressive experience identifying and implementing innovative
+									solutions, and coordinating and collaborating within the geospatial and development communities.</p>
+								<p>She is an organizer of <a href="//maptime.io/msp">Maptime MSP</a> and a <a href="//mngislis.org">Minnesota GIS/LIS
+									Consortium</a> conference volunteer. In her free time Kitty likes to hike, snowshoe, play pond hockey, and travel
+									around the world.</p>
 							</div>
-							<div class="projects" id="hover-img"><!-- Project Thumbnails -->
-    							<div class="row">
-									<div class="col-md-4">
-										<a href="http://geospatialem.github.io/conference-map" class="thumbnail">
-                							<div class="caption">
-                    							<p><b>2016 Minnesota GIS/LIS Conference Map</b><br /><br />
-                    							The 2016 conference map based in Duluth, Minnesota.</p>
-                							</div>
-                							<div class="caption-btm"><p><b>2016 Minnesota GIS/LIS Conference Map</b></p></div>
-                							<img src="img/projects/mngislis.png" alt="2016 Minnesota GIS/LIS Conference Map"/>
-										</a>
-        							</div>
-											<div class="col-md-4">
-										<a href="http://geospatialem.github.io/world-travels" class="thumbnail">
-															<div class="caption">
-																	<p><b>World Travel Highlights</b><br /><br />
-																	A map showcasing highlights of travels around the globe!</p>
-															</div>
-															<div class="caption-btm"><p><b>World Travel Highlights</b></p></div>
-															<img src="img/projects/alaska.png" alt="World Travel Highlights Map"/>
-										</a>
-											</div>
-											<div class="col-md-4">
-												<a href="http://geospatialem.github.io/Turf.js-Fun" class="thumbnail">
-																	<div class="caption">
-																			<p><b>Introduction to Turf.js</b><br /><br />
-																			Having fun with Mapbox's Turf, a JavaScript Library for GIS in the browser.</p>
-																	</div>
-																	<div class="caption-btm"><p><b>Introduction to Turf.js</b></p></div>
-																	<img src="img/projects/turf-js.png" alt="Introduction to Turf.js"/>
-												</a>
-													</div>
-													<div class="col-md-4">
-												<a href="http://geospatialem.github.io/mapbox-styles" class="thumbnail">
-																	<div class="caption">
-																			<p><b>Mapbox Styles</b><br /><br />
-																			Showcasing some awesome styling fun using Mapbox Studio.</p>
-																	</div>
-																	<div class="caption-btm"><p><b>Mapbox Styles</b></p></div>
-																	<img src="img/projects/mapbox-studio.png" alt="Mapbox Styles"/>
-												</a>
-													</div>
-													<div class="col-md-4">
-												<a href="http://urisavc.github.io/geospatial-institutions" class="thumbnail">
-																	<div class="caption">
-																			<p><b>Geospatial Institutions</b><br /><br />
-																			A compliation of geospatial colleges and universities in North America with a focus on Canada and the United States.</p>
-																	</div>
-																	<div class="caption-btm"><p><b>Geospatial Institutions</b></p></div>
-																	<img src="img/projects/geo-institutions.png" alt="Geospatial Institutions"/>
-												</a>
-													</div>
-									<div class="col-md-4">
-										<a href="http://geospatialem.github.io/geogeeks-learn-js" class="thumbnail">
-                							<div class="caption">
-                    							<p><b>Geogeeks Learn JavaScript</b><br /><br />
-                    							#Geogeeks trying to learn the Esri JavaScript API!</p>
-                							</div>
-                							<div class="caption-btm"><p><b>Geogeeks Learn JavaScript</b></p></div>
-                							<img src="img/projects/esri-js.png" alt="Geogeeks Learn JavaScript"/>
-										</a>
-        							</div>
-        							<div class="col-md-4">
-										<a href="http://geospatialem.github.io/mngislis-attendees" class="thumbnail">
-                							<div class="caption">
-                   	 							<p><b>MN GIS/LIS Attendees</b><br /><br />
-                    							Minnesota GIS/LIS annual Conference attendee numbers, organized by year. A compiled dataset includes data from 2007-2014 (excluding 2012). </p>
-                							</div>
-                							<div class="caption-btm"><p><b>MN GIS/LIS Attendees</b></p></div>
-                							<img src="img/projects/mngislis-attendees.png" alt="MN GIS/LIS Attendees"/>
-										</a>
-        							</div>
-        						 	<div class="col-md-4">
-										<a href="http://geospatialem.github.io/leaflet-interactive-template" class="thumbnail">
-                							<div class="caption">
-                   	 							<p><b>Leaflet Embedded Template</b><br /><br />
-                    							A fun project to design an embedded interactive map for potential business cases.</p>
-                							</div>
-                							<div class="caption-btm"><p><b>Leaflet Embedded Template</b></p></div>
-                							<img src="img/projects/leaflet-interactive.png" alt="Leaflet Embedded Template"/>
-										</a>
-        							</div>
-											<div class="col-md-4">
-										<a href="http://geospatialem.github.io/healthy-map" class="thumbnail">
-															<div class="caption">
-																	<p><b>Healthy Map</b><br /><br />
-																	Mapping health and non-health data, in particular to see points and polygons
-																	overlayed on one map together.</p>
-															</div>
-															<div class="caption-btm"><p><b>Healthy Map</b></p></div>
-															<img src="img/projects/healthy-map.png" alt="Healthy Map"/>
-										</a>
-											</div>
-											<!-- <div class="col-md-4">
-										<a href="#" class="thumbnail">
-															<div class="caption">
-																	<p><b>Under Construction</b><br /><br />
-																	...</p>
-															</div>
-															<div class="caption-btm"><p><b>Under Construction</b></p></div>
-															<img src="img/projects/coming-soon.png" alt="Project Name"/>
-										</a>
-											</div>-->
-    							</div><!-- /row end -->
-							</div> <!-- .Project Thumbnails -->
+							<div class="col-sm-4">
+								<ul class="list-unstyled">
+									<li><span class="glyphicon glyphicon-tags" aria-hidden="true"></span>Accessibility, Cartography, JavaScript</li>
+									<li><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>St. Paul, Minnesota</li>
+								</ul>
+							</div>
+						</div><!--/Column subheading row-->
+					</div><!--/Column subheading-->
+					</div><!--/Bootstrap row-->
+			</div><!--/Bootstrap container-->
+		</section><!--/About section-->
 
+					<!-- Projects section -->
+						<section id="projects">
+							<div class="container"><!--Bootstrap container-->
+									<div class="row"><!--Bootstrap row-->
+										<div class="col-md-3"><!--Section title-->
+											<h2>Projects</h2>
+										</div><!--/Section title-->
+										<div class="col-md-9"><!--Subsection title-->
+											<div class="row"><!--Subsection row #1-->
+												<div class="col-sm-4">
+													<a href="/conference-map">
+													<img src="img/projects/mngislis.png" class="img-responsive img-thumbnail" alt="Minnesota GIS/LIS Conference map thumbnail">
+													<h4>2016 Minnesota GIS/LIS Conference Map</h4>
+													<h5>The 2016 conference map based in Duluth, Minnesota.</h5>
+												</a></div>
+											  <div class="col-sm-4">
+													<a href="/world-travels">
+													<img src="img/projects/alaska.png" class="img-responsive img-thumbnail" alt="World travel map thumbnail">
+													<h4>World Travel Highlights</h4>
+													<h5>A map showcasing highlights of travels around the globe!</h5>
+												</div>
+												<div class="col-sm-4">
+													<a href="/Turf.js-Fun">
+													<img src="img/projects/turf-js.png" class="img-responsive img-thumbnail" alt="Turf.js map thumbnail">
+													<h4>Introduction to Turf.js</h4>
+													<h5>Having fun with Mapbox's Turf, a JavaScript Library for GIS in the browser.</h5>
+												</a></div>
+											</div><!--/Subsection row #1-->
+											<div class="row"><!--Subsection row #2-->
+												<div class="col-sm-4">
+													<a href="/mapbox-styles">
+													<img src="img/projects/mapbox-studio.png" class="img-responsive img-thumbnail" alt="Mapbox style map thumbnail">
+													<h4>Mapbox Styles</h4>
+													<h5>Showcasing some awesome styling fun using Mapbox Studio.</h5>
+												</a></div>
+												<div class="col-sm-4">
+													<a href="//urisavc.github.io/geospatial-institutions">
+													<img src="img/projects/geo-institutions.png" class="img-responsive img-thumbnail" alt="Geospatial institutions map thumbnail">
+													<h4>Geospatial Institutions</h4>
+													<h5>A compliation of geospatial colleges and universities in North America with a focus on Canada and the United States.</h5>
+												</a></div>
+												<div class="col-sm-4">
+													<a href="/geogeeks-learn-js">
+													<img src="img/projects/esri-js.png" class="img-responsive img-thumbnail" alt="Esri JavaScript map thumbnail">
+													<h4>Geogeeks Learn JavaScript</h4>
+													<h5>Geogeeks learning Git and the Esri JavaScript API.</h5>
+												</a></div>
+											</div><!--/Subsection row #2-->
+											<div class="row"><!--Subsection row #3-->
+												<div class="col-sm-4">
+													<a href="/mngislis-attendees">
+													<img src="img/projects/mngislis-attendees.png" class="img-responsive img-thumbnail" alt="Minnesota GIS/LIS past attendee map thumbnail">
+													<h4>Minnesota GIS/LIS Attendees</h4>
+													<h5>Minnesota GIS/LIS annual Conference attendee numbers, organized by year. A compiled dataset includes data from 2007-2014 (excluding 2012).</h5>
+												</a></div>
+												<div class="col-sm-4">
+													<a href="/leaflet-interactive-template">
+													<img src="img/projects/leaflet-interactive.png" class="img-responsive img-thumbnail" alt="Leaflet embedded map thumbnail">
+													<h4>Leaflet Embedded Template</h4>
+													<h5>A fun project to design an embedded interactive map for potential business cases.</h5>
+												</a></div>
+												<div class="col-sm-4">
+													<a href="/healthy-map">
+													<img src="img/projects/healthy-map.png" class="img-responsive img-thumbnail" alt="Healthy map thumbnail">
+													<h4>Healthy Map</h4>
+													<h5>Mapping health and non-health data, in particular to see points and polygons overlayed on one map together.</h5>
+												</a></div>
+											</div><!--/Subsection row #3-->
+										</div><!--/Subsection title-->
+									</div><!--/Bootstrap row-->
+							</div><!--/Bootstrap container-->
+						</section><!--/Projects section-->
 
-				<div id="footer"> <!-- Footer -->
-           			<div class="col-lg-12 col-md-12 col-sm-12">
-        				<hr />
-					<!-- Social Media -->
-					<div class="col-lg-12 col-md-12 col-sm-12">
-						<a href="http://twitter.com/geospatialem">
-							<span class="fa-stack fa-lg">
-  								<i class="fa fa-circle fa-stack-2x"></i>
-  								<i class="fa fa-twitter fa-inverse fa-stack-1x"></i>
-								</a>
-							</span>
+						<!-- Footer -->
+						<footer>
+							<div class="container text-center" id="contact"><!--Container-->
+								<!--Twitter-->
+								<a href="//twitter.com/geospatialem">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-twitter fa-inverse fa-stack-1x"></i>
+								</a></span>
+								<!--LinkedIn-->
+								<a href="//linkedin.com/in/khurley">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-linkedin fa-inverse fa-stack-1x"></i>
+								</a></span>
+								<!--GitHub-->
+								<a href="//github.com/geospatialem">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-github fa-inverse fa-stack-1x"></i>
+								</a></span>
+								<!--Wordpress-->
+								<a href="//geospatialresponse.wordpress.com">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-wordpress fa-inverse fa-stack-1x"></i>
+								</a></span>
+								<div id="copyright" class="row">
+								<small>&copy; 2016 Kitty Hurley</small>
+								</div>
+							</div><!--/Container-->
+						</footer><!--/Footer-->
 
-						<a href="http://www.linkedin.com/in/khurley">
-							<span class="fa-stack fa-lg">
-  								<i class="fa fa-circle fa-stack-2x"></i>
-  								<i class="fa fa-linkedin fa-inverse fa-stack-1x"></i>
-								</a>
-							</span>
-						<a href="https://github.com/geospatialem/">
-							<span class="fa-stack fa-lg">
-  								<i class="fa fa-circle fa-stack-2x"></i>
-  								<i class="fa fa-github fa-inverse fa-stack-1x"></i>
-								</a>
-							</span>
-						<a href="http://geospatialresponse.wordpress.com">
-							<span class="fa-stack fa-lg">
-  								<i class="fa fa-circle fa-stack-2x"></i>
-  								<i class="fa fa-wordpress fa-inverse fa-stack-1x"></i>
-								</a>
-							</span>
-          			</div><!-- /#social media -->
-          			</div><!-- /column -->
-     			</div><!-- /#footer -->
-
-			</div><!-- /#container -->
-		</div><!-- /#sb-site -->
-
-
-		<!-- Slidebars -->
-		<div class="sb-slidebar sb-left">
-	<nav>
-		<ul class="sb-menu">
-			<li class="sb-close"><a href="#"><i class="fa fa-globe fa-2x"></i></a></li>
-			<li class="sb-close"><a href="#aboutMe"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;&nbsp;About</a></li>
-			<li class="sb-close"><a href="#projects"><i class="fa fa-folder-open"></i>&nbsp;&nbsp;&nbsp;Projects</a></li>
-			<li class="sb-close"><a href="http://geospatialresponse.wordpress.com"><i class="fa fa-external-link-square"></i>&nbsp;&nbsp;&nbsp;Blog</a></li>
-			<li class="sb-close"><a href="https://twitter.com/geospatialem"><i class="fa fa-twitter"></i>&nbsp;&nbsp;&nbsp;Follow me on Twitter</a></li>
-		</ul>
-	</nav>
-</div><!-- /.sb-left -->
-
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.js"></script>
-		<script src="js/widgets.js"></script>
-		<script src="js/slidebars.min.js"></script>
+		<script src="//code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="js/app.js"></script>
-
 
 	</body>
 </html>

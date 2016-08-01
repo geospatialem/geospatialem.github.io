@@ -1,193 +1,164 @@
-/*==============================
-  ||     TABLE OF CONTENTS    ||
-  ==============================
-	01. Formatting
-	02. Navigation
-	03. Main Header
-	04. Header Media Queries
-	05. Slidebar 
-	06. Slidebar Main Menu
-	07. Slidebar Borders
-	08. Project Hover
-	09. Footer 
-  ==============================*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Candal');
 
-/*****************************/
-/*      01. Formatting      */
-/***************************/
-body { 
-	font-family: 'Raleway', sans-serif;
-	margin: 0;
-	font-size: 14px;
-	line-height: 1.231;
-	overflow-x: hidden;
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
 }
-#aboutMe, #projects {
-	margin: 0;
-	padding-bottom: 20px;
-	'-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
-	filter: alpha(opacity=95);
-	opacity: .95;
-	padding-top: 20px;
-}
-body, button, input, select, textarea { font-family: 'Raleway', sans-serif; color: #222; }
-h1, h2, h3, h4, h5, p { font-family: 'Raleway', sans-serif; }
 
-/*****************************/
-/*      02. Navigation      */
-/***************************/
+h1,h2,h3,h4 {
+  font-family: 'Candal';
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h5,h6 {
+  font-family: 'Open Sans';
+  font-weight: 700;
+}
+#projects h5 {
+  visibility: hidden;
+}
+h1 {
+  letter-spacing: 5px;
+}
+h2 {
+  letter-spacing: 3px;
+}
+h3,h4 {
+  letter-spacing: 1px;
+  text-align: center;
+}
+a {
+  color: #333333;
+}
+a:hover,
+a:focus {
+  color: #FE3D33;
+  text-decoration: none;
+  font-weight: bold;
+}
+img:hover {
+  opacity: 0.8;
+  background: rgba(254, 61, 51, 1);
+  #projects h5 {
+    display: inline;
+  }
+}
 .navbar {
-	box-shadow: /* Shadow beneath the bar and edge highlights; layered single pixel shadows to create a one sided shadow effect. */
-		0 5px 0 0 rgba(0, 0, 0, 0.01),
-		0 4px 0 0 rgba(0, 0, 0, 0.02),
-		0 3px 0 0 rgba(0, 0, 0, 0.04),
-		0 2px 0 0 rgba(0, 0, 0, 0.06),
-		0 1px 0 0 rgba(0, 0, 0, 0.08),
-		0 1px 0 0 rgba(255, 255, 255, 0.1) inset, /* Left highlight */		
-		1px 0 0 0 rgba(255, 255, 255, 0.1) inset, /* Left highlight */		
-		-1px 0 0 0 rgba(255, 255, 255, 0.1) inset, /* Right highlight */
-		0 -1px 0 0 rgba(0, 0, 0, 0.1) inset; /* Bottom lowlight */	
-	border: none; /* Bootstrap Change */
-	width: 100%; /* Bootstrap Change */
-	left: auto; /* Bootstrap Change */
-	right: auto; /* Bootstrap Change */
+  background: #D4E2E3;
+  background: linear-gradient(#D4E2E3, #FFF);
+  border-bottom: blue;
+  margin-bottom: 0;
 }
-#logo { 
-	margin-top: 4px;
-	text-align: center;
-	color: #fff;
-	font-size: 25px;
+.navbar ul {
+  margin-bottom: 0;
 }
-.navbar .sb-toggle-left {
-	width: 58px;
-	float: left;
-	padding: 14px;
+.navbar li {
+  display: block;
+  margin: 15px 0;
 }
-.navicon-line {
-	width: 24px;
-	height: 4px;
-	border-radius: 1px;
-	margin-bottom: 3px;
-	background-color: #fff;
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  color: #FE3D33;
+  background: transparent;
 }
-.sb-toggle-left, .sb-open-left, .sb-close { cursor: pointer; }
-
-/*****************************/
-/*     03. Main Header      */
-/***************************/
-#mainHeader a { text-decoration: none; }
-#mainHeader a:hover { text-decoration: none; }
-#mainHeader #mainHeader-img {
+.navbar-default .navbar-nav>li>a {
+  color: #2B3E42;
+}
+.navbar a,
+.navbar a:link,
+.navbar a:visited,
+.navbar a:active {
+  font-family: 'Candal';
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-bottom: 0;
+  padding: 0;
+}
+.nav {
+  margin: 0;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background: transparent;
+}
+.navbar-collapse {
+  width: 100%;
+  border: none;
+  box-shadow: none;
+}
+@media(min-width: 768px) {
+  .navbar {
+    padding: 0;
+    height: 50px;
+  }
+  .navbar li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  .navbar a,
+  .navbar a:link,
+  .navbar a:visited,
+  .navbar a:active {
+    line-height: 50px;
+  }
+  .navbar-nav,
+  .navbar-nav > li {
+    float: none;
+  }
+}
+.jumbotron {
+  padding: 20em 0em 1em 2em;
+  color: white;
+  text-align: left;
 	width: 100%;
-	margin-bottom: 20px;
+	margin-bottom: 100px;
 	background-image: url('../img/khurley.jpg');
 	background-position: center right;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-#mainHeader p.lead {
-	position: absolute;
-	right: 10px;
-	color: #F5F5F5;
-	text-align: right;
-	font-weight: bold;
-	text-shadow: 1px 1px #767676;
+section {
+  margin: 60px auto;
 }
-.navbar-default {
-	background-color: #000;
-	border-color: #000;
+section > .container > .row {
+  border-top: 2px solid #747E80;
+  margin: auto;
+  padding-top: 60px;
 }
-
-/*****************************/
-/* 04. Header Media Queries */
-/***************************/
-@media (max-width: 800px) { /* Small/Medium Screens: < 800px */
-	#mainHeader #mainHeader-img { height: 300px; }
-	#mainHeader p.lead { top: 300px; }
+footer > .container {
+  border-top: 2px solid #747E80;
+  width: 90%;
+  padding-top: 60px;
 }
-@media (min-width: 800px) { /* Large Screens: > 800px */
-	#mainHeader #mainHeader-img { height: 500px; }
-	#mainHeader p.lead { top: 500px; }
+section:first-of-type > .container > .row {
+  border-top: 0;
+  padding-top: 0;
 }
-
-/*****************************/
-/*      05. Slidebar        */
-/***************************/
-#sb-site { box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.3); padding: 50px 0 30px 0; } /* Shadow cast onto the slidebars when opened. */
-.sb-slidebar { background-color: #000; color: #e8e8e8; } /* Background & Text Color */
-.sb-slidebar a { color: #FFF; text-decoration: none; }
-.sb-slidebar a:hover { color: #FFF; text-decoration: underline; } /* Link hover color & decoration */
-
-/*****************************/
-/*  06. Slidebar Main Menu  */
-/***************************/
-.sb-menu { /* Apply to <ul> or <ol>. */
-	padding: 0;
-	margin: 0;
-	list-style-type: none;
+#about .list-unstyled {
+  margin-top: 30px;
 }
-.sb-menu li {
-	width: 100%;
-	padding: 0;
-	margin: 0;
-	border-top: 1px solid rgba(255, 255, 255, 0.1); /* Will lighten any background color you set. */
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Will darken any background color you set. */
+@media(min-width: 768px) {
+  #about .list-unstyled {
+    margin-top: 0;
+  }
 }
-.sb-menu li a {
-	width: 100%; /* Makes links full width. */
-	display: inline-block;
-	padding: 1em; /* Creates an even padding the same size as your font. */
-	color: #f2f2f2;
+#about .list-unstyled li {
+  margin-bottom: 10px;
 }
-.sb-menu > li:first-child { border-top: none; } /* Removes top border from first list item.. */
-.sb-menu > li:last-child { border-bottom: none; } /* Removed bottom border from last list item. */
-.sb-menu li a:hover { text-decoration: none; background-color: rgba(255, 255, 255, 0.05); } /* Will lighten any background color you set. */
-
-/*****************************/
-/*   07. Slidebar Borders   */
-/***************************/
-.sb-left .sb-menu li a { border-left: 3px solid transparent; }
-.sb-left .sb-menu li a:hover { border-left: 3px solid; } /* Removes transparent color, so border color will be the same as link hover color. */
-
-/*****************************/
-/*     08. Project Hover    */
-/***************************/
-#hover-img .thumbnail { 
-	position: relative; 
-	overflow: hidden; 
+#about .glyphicon {
+  font-size: 25px;
+  margin-right: 10px;
+  vertical-align: middle;
 }
-#hover-img .caption { 
-	display: none; 
-	text-align: center; 
-	position: absolute; 
-	top: 0; 
-	left: 0; 
-	background: rgba(0, 0, 0, 0.4); 
-	width: 100%; 
-	height: 100%; 
-	color: #fff !important; 
+footer {
+  margin: 60px 0;
 }
-#hover-img .caption p { 
-	padding: 6px;
+#copyright {
+  padding-top: 3em;
 }
-#hover-img .caption-btm { 
-	background: rgba(0, 0, 0, 0.6); 
-	width: 90%; 
-	height: 40px; 
-	position: absolute; 
-	bottom: 4px; 
-	color: #fff; 
-	display: table; 
-	width: 100%; 
-}
-#hover-img .caption-btm p { 
-	text-align: center; 
-	font-size: 1.17em; 
-	display: table-cell; 
-	vertical-align: middle; 
-}
-
-/*****************************/
-/*       09. Footer         */
-/***************************/
-#footer { text-align: center; }
