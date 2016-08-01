@@ -22,6 +22,7 @@ h5,h6 {
 }
 h1 {
   letter-spacing: 5px;
+  text-shadow: 2px 2px #161012;
 }
 h2 {
   letter-spacing: 3px;
@@ -32,6 +33,15 @@ h3,h4 {
 }
 a {
   color: #333333;
+}
+.jumbotron p {
+  text-shadow: 1px 1px #161012;
+}
+:focus, :hover {
+	border:2px #FE3D33;
+	outline: 0;
+	-webkit-transition:all 0.15s ease-in-out;
+	transition:all 0.15s ease-in-out;
 }
 a:hover,
 a:focus {
@@ -59,10 +69,16 @@ img:hover {
   display: block;
   margin: 15px 0;
 }
+p > a,
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
   color: #FE3D33;
+  background: transparent;
+}
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+  font-size: 20px;
   background: transparent;
 }
 .navbar-default .navbar-nav>li>a {
