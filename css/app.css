@@ -52,9 +52,6 @@ a:focus {
 img:hover {
   opacity: 0.8;
   background: rgba(254, 61, 51, 1);
-  #projects h5 {
-    display: inline;
-  }
 }
 .navbar {
   background: #D4E2E3;
