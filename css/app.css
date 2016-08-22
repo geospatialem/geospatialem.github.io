@@ -44,12 +44,15 @@ a {
 	transition:all 0.15s ease-in-out;
 }
 a:hover,
-a:focus {
+a:focus,
+.hover {
   color: #FE3D33;
   text-decoration: none;
   font-weight: bold;
 }
-img:hover {
+img:hover,
+a:focus img,
+.hover {
   opacity: 0.8;
   background: rgba(254, 61, 51, 1);
 }
