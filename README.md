@@ -1,15 +1,16 @@
-<a href="http://geospatialem.github.io">Homepage</a>
-======================
+[Homepage](http://geospatialem.github.io)  
+======================  
 
-Where project content lives + breathes.
+Where project content lives + breathes.  
 
-## Projects
-1. <a href="http://geospatialem.github.io/conference-map">2015 Minnesota GIS/LIS Conference Map</a>
-2. <a href="http://geospatialem.github.io/geogeeks-learn-js">Geogeeks Learn JavaScript</a>
-3. <a href="http://geospatialem.github.io/Turf.js-Fun">Introduction to Turf.js</a>
-4. <a href="http://geospatialem.github.io/healthy-map">Healthy Map</a>
-5. <a href="https://github.com/geospatialem/geospatial-institutions">Geospatial Institutions</a>
-6. <a href="http://geospatialem.github.io/mngislis-attendees">MN GIS/LIS Attendees<a/>
-7. <a href="http://geospatialem.github.io/leaflet-interactive-template">Interactive Leaflet Template</a>
-8. <a href="http://geospatialem.github.io/alaska-travels">Alaska Vacation Highlights</a>
-9. <a href="http://geospatialem.github.io/mapbox-styles">Mapbox Styles</a>
+## Projects  
+
+1. [2017 Minnesota GIS/LIS Conference Map](https://geospatialem.github.io/conference-map)  
+2. [World Travel Highlights](http://geospatialem.github.io/world-travels)  
+3. [Introduction to Turf.js](http://geospatialem.github.io/Turf.js-Fun)  
+4. [Mapbox Styles](http://geospatialem.github.io/mapbox-styles)  
+5. [Geospatial Institutions](http://urisavc.github.io/geospatial-institutions/)  
+6. [Latitude &amp; Longitude Coordinates](http://geospatialem.github.io/esri-maps/coordinates)  
+7. [MN GIS/LIS Attendees](http://geospatialem.github.io/mngislis-attendees)  
+8. [Leaflet Embedded Template](http://geospatialem.github.io/leaflet-interactive-template)  
+9. [Healthy Map](http://geospatialem.github.io/healthy-map)  
