@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeadlineComponent implements OnInit {
 
+  isMobile = false;
+
   tagLines = [
     { "tag": "Accessibility advocate" },
     { "tag": "Designer" },
@@ -15,7 +17,21 @@ export class HeadlineComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.isMobile = this.getIsMobile();
+    window.onresize = () => {
+      this.isMobile = this.getIsMobile();
+    };
+  }
+
+  getIsMobile(): boolean {
+    const clientWidth = document.documentElement.clientWidth;
+    const breakpoint = 600;
+    if (clientWidth < breakpoint) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
 }

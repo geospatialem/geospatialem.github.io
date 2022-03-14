@@ -14,7 +14,7 @@
 
 
 <!-- Map view -->
-<mat-card class="mat-elevation-z0" *ngIf="displayType.value === 'map'">
+<mat-card class="mat-elevation-z0" *ngIf="displayType.value !== 'list'">
     <button mat-raised-button color="accent" (click)="playTime();"><mat-icon>{{ playStatus === 'Play' ? 'play_circle_filled' : 'pause_circle_filled' }}</mat-icon> {{playStatus}} timeline</button>
 </mat-card>
 <div class="container" [ngClass]="{'visually-hidden': displayType.value === 'list'}">

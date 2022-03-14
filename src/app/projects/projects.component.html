@@ -7,15 +7,15 @@
     <!-- 740 x 523 -->
 
     <div class="projects">
-        <div fxLayout="row wrap" fxLayoutGap="5em grid">   
-            <div fxFlex="50%" fxLayoutAlign="stretch" *ngFor="let project of projects">
+        <div fxLayout="row wrap" fxLayoutGap="5% grid">   
+            <div fxFlex="{{flexPct}}" fxLayoutAlign="stretch" *ngFor="let project of projects">
                 <mat-card class="mat-elevation-z4">
                     <mat-card-header>
                         <mat-card-title>
                             <h3>{{project.name}}</h3>
                         </mat-card-title>
                     </mat-card-header>
-                    <img mat-card-image src="{{imagePath}}{{project.img}}" alt="{{project.name}} application screenshot">
+                    <img mat-card-image src="/assets/img/{{project.img}}" alt="{{project.name}} application screenshot">
                     <mat-card-content>
                         <p>{{project.desc}}</p>
                     </mat-card-content>

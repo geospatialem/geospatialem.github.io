@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+  isDesktop = true;
+
   listItems = [
     { 
       "item": "About", 
@@ -27,7 +29,21 @@ export class MenuComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.isDesktop = this.getIsDesktop();
+    window.onresize = () => {
+      this.isDesktop = this.getIsDesktop();
+    };
+  }
+
+  getIsDesktop(): boolean {
+    const clientWidth = document.documentElement.clientWidth;
+    const breakpoint = 600;
+    if (clientWidth > breakpoint) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
 }

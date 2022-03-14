@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  imagePath = window.location.origin + '/assets/img/';
+  flexPct = '50%';
 
   projects = [
     { 
@@ -62,7 +62,22 @@ export class ProjectsComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.flexPct = this.getWindowDimensions();
+    window.onresize = () => {
+      this.flexPct = this.getWindowDimensions();
+    };
+
+  }
+
+  getWindowDimensions(): string {
+    const windowWidth = document.documentElement.clientWidth;
+    const breakpoint = 950;
+    if (windowWidth > breakpoint) {
+      return '50%';
+    } else {
+      return '100%';
+    }
   }
 
 }

@@ -1,11 +1,22 @@
 header {
     width: 100vw;
     height: 75vh;
-    background: url('http://geospatialem.github.io/img/khurley.jpg') no-repeat top center;
+    background: url('/assets/img/khurley.jpg') no-repeat top center;
     background-position: center right;
     background-size: cover;
 }
 
 mat-toolbar {
     background: #ffffff33
+}
+
+h1 {
+    font-family: Candal;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 36px;
+    text-shadow: 2px 2px #161012;
+    text-transform: lowercase;
+    text-align: center;
+    padding-top: 100%;
 }
