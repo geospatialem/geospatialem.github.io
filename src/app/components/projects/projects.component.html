@@ -4,8 +4,6 @@
         <h2>Projects</h2>
     </mat-card>
 
-    <!-- 740 x 523 -->
-
     <div class="projects">
         <div fxLayout="row wrap" fxLayoutGap="5% grid">   
             <div fxFlex="{{flexPct}}" fxLayoutAlign="stretch" *ngFor="let project of projects">
@@ -15,6 +13,7 @@
                             <h3>{{project.name}}</h3>
                         </mat-card-title>
                     </mat-card-header>
+                    <!-- Image dimensions: 740 x 523 -->
                     <img mat-card-image src="/assets/img/{{project.img}}" alt="{{project.name}} application screenshot">
                     <mat-card-content>
                         <p>{{project.desc}}</p>

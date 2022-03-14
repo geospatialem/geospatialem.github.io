@@ -31,6 +31,7 @@ export class MenuComponent implements OnInit {
 
   ngOnInit() {
     this.isDesktop = this.getIsDesktop();
+    this.getIsDesktop();
     window.onresize = () => {
       this.isDesktop = this.getIsDesktop();
     };
