@@ -27,7 +27,9 @@
             <h3>Leadership Skills</h3>
 
             <div id="leadershipSkills">
-                <li *ngFor="let leadSkill of leadSkills">{{leadSkill.strength}}</li>
+                <ul>
+                    <li *ngFor="let leadSkill of leadSkills">{{leadSkill.strength}}</li>
+                </ul>
             </div>
 
 
@@ -45,8 +47,8 @@
                     <ng-container matColumnDef="level">
                         <mat-header-cell *matHeaderCellDef class="visually-hidden">Expertise</mat-header-cell>
                         <mat-cell *matCellDef="let techSkill">
-                            <mat-progress-bar mode="determinate" value="{{techSkill.level}}"></mat-progress-bar>
-                            <div id="skillLevel"> {{ techSkill.level > 90 ? 'Expert' : techSkill.level > 80 ? 'Advanced' : 'Intermediate' }} 
+                            <mat-progress-bar mode="determinate" value="{{techSkill.level}}" attr.aria-label="{{techSkill.level}}" matTooltip="{{techSkill.level}}"></mat-progress-bar>
+                            <div class="skillLevel"> {{ techSkill.level > 90 ? 'Expert' : techSkill.level > 80 ? 'Advanced' : 'Intermediate' }} 
                                 <span class="visually-hidden">({{techSkill.level}}%)</span>
                             </div>
                         </mat-cell>
