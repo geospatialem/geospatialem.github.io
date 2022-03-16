@@ -1,0 +1,61 @@
+.container {
+    width: calc(100vw - 10%);
+    height: 75vh;
+    margin: 0;
+    padding: 0 5%;
+    display: flex;
+}
+
+.slideContainer {
+    width: calc(100vw - 10%);
+    margin: 0;
+    padding: 2% 5%;
+}
+
+.slideContainer, 
+#listCard {
+    margin-bottom: 5%;
+}
+
+#viewDiv,
+#listDiv,
+#timeSlider {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#timeSlider {
+    min-width: 0;
+}
+
+#listTable {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+mat-cell {
+    display: block;
+    padding: 0.5em;
+}
+
+.mat-column-name {
+    flex: 0 0 50%;
+}
+
+mat-row, 
+mat-header-row, 
+mat-footer-row {
+    border-bottom-width: 0px;
+    border-bottom-style: none;
+}
+
+mat-header-row {
+    min-height: 1px;
+}
+
+.mat-button-toggle-checked.mat-button-toggle-appearance-standard {
+    color: #FFF;
+    background: #017DAC;
+}

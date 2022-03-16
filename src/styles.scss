@@ -1,0 +1,136 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+@include mat-core();
+
+body { 
+    margin: 0; 
+    font-family: Roboto, 
+    "Helvetica Neue", sans-serif; 
+}
+
+h1 {
+    color: #FFF;
+}
+
+h2, 
+h3 {
+ color: #007DAC;
+}
+
+.mat-card {
+    padding: 2em!important;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+$kh-primary: (
+    50 : #e0eff5,
+    100 : #b3d8e6,
+    200 : #80bed6,
+    300 : #4da4c5,
+    400 : #2691b8,
+    500 : #007dac,
+    600 : #0075a5,
+    700 : #006a9b,
+    800 : #006092,
+    900 : #004d82,
+    A100 : #afd9ff,
+    A200 : #7cc1ff,
+    A400 : #49a9ff,
+    A700 : #309dff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$kh-accent: (
+    50 : #f9eae4,
+    100 : #f0c9bb,
+    200 : #e6a68e,
+    300 : #dc8261,
+    400 : #d5673f,
+    500 : #cd4c1d,
+    600 : #c8451a,
+    700 : #c13c15,
+    800 : #ba3311,
+    900 : #ae240a,
+    A100 : #ffdfda,
+    A200 : #ffb2a7,
+    A400 : #ff8574,
+    A700 : #ff6e5b,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$kh-warning: (
+    50 : #f8e2e7,
+    100 : #edb7c4,
+    200 : #e2889c,
+    300 : #d65874,
+    400 : #cd3457,
+    500 : #c41039,
+    600 : #be0e33,
+    700 : #b60c2c,
+    800 : #af0924,
+    900 : #a20517,
+    A100 : #ffcdd1,
+    A200 : #ff9aa1,
+    A400 : #ff6772,
+    A700 : #ff4d5a,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$kh-primary: mat-palette($kh-primary);
+$kh-accent:  mat-palette($kh-accent);
+$kh-warn:    mat-palette($kh-warning);
+$kh-theme: mat-light-theme($kh-primary, $kh-accent, $kh-warning);
+@include angular-material-theme($kh-theme);

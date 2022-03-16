@@ -1,0 +1,63 @@
+<app-headline></app-headline>
+
+<section>
+    
+    <mat-card class="mat-elevation-z0">
+
+        <div>
+            <!-- About -->
+            <h2>About</h2>
+
+            <p>Kitty is a Senior Product Engineer focused on web accessibility and internationalization, usability, design, and web development. She has over fourteen years of expertise identifying and implementing innovative solutions, and coordinating and collaborating within the geospatial and web development communities.</p>
+            
+            <p>In her free time she enjoys exploring, hiking, paddling, playing hockey, and traveling.</p>
+        </div>
+
+            <!-- Location -->
+            <h3 id="locationHeader">
+                <mat-icon> location_on</mat-icon>Minneapolis, Minnesota
+            </h3>
+
+    </mat-card>
+
+    <mat-card class="mat-elevation-z0">
+        <h2>Skills</h2>
+
+            <!-- Leadership skills -->
+            <h3>Leadership Skills</h3>
+
+            <div id="leadershipSkills">
+                <ul>
+                    <li *ngFor="let leadSkill of leadSkills">{{leadSkill.strength}}</li>
+                </ul>
+            </div>
+
+
+            <!-- Technical Skills -->
+            <h3>Technical Skills</h3>
+
+            <mat-card class="mat-elevation-z0">
+                <mat-table #table [dataSource]="techSkills" matSortDisableClear>
+                    <!-- Skill -->
+                    <ng-container matColumnDef="name">
+                        <mat-header-cell *matHeaderCellDef class="visually-hidden">Skill</mat-header-cell>
+                        <mat-cell *matCellDef="let techSkill">{{techSkill.name}}</mat-cell>
+                    </ng-container>
+                    <!-- Expertise -->
+                    <ng-container matColumnDef="level">
+                        <mat-header-cell *matHeaderCellDef class="visually-hidden">Expertise</mat-header-cell>
+                        <mat-cell *matCellDef="let techSkill">
+                            <mat-progress-bar mode="determinate" value="{{techSkill.level}}" attr.aria-label="{{techSkill.level}}" matTooltip="{{techSkill.level}}"></mat-progress-bar>
+                            <div class="skillLevel"> {{ techSkill.level > 90 ? 'Expert' : techSkill.level > 80 ? 'Advanced' : 'Intermediate' }} 
+                                <span class="visually-hidden">({{techSkill.level}}%)</span>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <mat-header-row *matHeaderRowDef="technicalSkillColumns"></mat-header-row>
+                    <mat-row *matRowDef="let row; columns: technicalSkillColumns"></mat-row>
+                </mat-table>
+        </mat-card>
+
+    </mat-card>
+
+</section>

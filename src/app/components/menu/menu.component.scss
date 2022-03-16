@@ -1,0 +1,25 @@
+nav {
+    flex: 1;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: flex-end;
+    padding-right: 1em;
+}
+
+/* Sticky header */
+.sticky {
+    position: sticky;
+    position: -webkit-sticky; /* For macOS/iOS Safari */
+    top: 0;
+    z-index: 1000; /* So content doesn't overlap the header */
+}
+
+.menu-spacer {
+  flex: 1 1 auto;
+}
+
+a:hover,
+a:focus {
+    color: #FFF;
+    background-color: #CD4C1D;
+}

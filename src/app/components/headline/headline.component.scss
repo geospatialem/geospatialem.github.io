@@ -1,0 +1,22 @@
+header {
+    width: 100vw;
+    height: 75vh;
+    background: url('/assets/img/khurley.jpg') no-repeat top center;
+    background-position: center right;
+    background-size: cover;
+}
+
+mat-toolbar {
+    background: #ffffff33
+}
+
+h1 {
+    font-family: Candal;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 36px;
+    text-shadow: 3px 3px #CD4C1C;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 60vh;
+}

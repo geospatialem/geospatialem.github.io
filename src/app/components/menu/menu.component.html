@@ -1,0 +1,13 @@
+<!-- Navigation menu -->
+<mat-toolbar color="primary" class="sticky">
+    <h1 *ngIf="isDesktop">Kitty Hurley</h1>
+    <span class="menu-spacer"></span>
+
+    <!-- Routing/Menu items -->
+    <a color="primary" *ngFor="let listItem of listItems" mat-flat-button routerLink="{{listItem.url}}">
+        <mat-icon>{{listItem.icon}}</mat-icon> 
+        {{listItem.item}}
+    </a>
+
+</mat-toolbar>
+ 

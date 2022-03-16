@@ -1,0 +1,55 @@
+.mat-table {
+    table-layout: fixed;
+    width: 90%;
+    display: table;
+}
+
+th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
+    border-bottom-width: 0px;
+    border-bottom-style: none;
+}
+
+.flex-container {
+    display: flex;
+    padding: 1em;
+    width: 90vw;
+}
+
+#locationDiv {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+#locationHeader {
+    color: #000;
+    margin-top: 3%;
+}
+
+#leadershipSkills {
+    padding-bottom: 4em;
+}
+
+.mat-column-name {
+    flex: 0 0 25%;
+    margin-right: 1em;
+}
+
+mat-row, mat-header-row, mat-footer-row {
+    border-bottom-width: 0px;
+    border-bottom-style: none;
+}
+
+mat-header-row {
+    min-height: 1px;
+}
+
+.mat-progress-bar {
+  height: 30px;
+}
+
+.skillLevel {
+    position: absolute; 
+    padding: 3vw; 
+    color: white;
+}

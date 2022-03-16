@@ -1,0 +1,46 @@
+<mat-card class="mat-elevation-z0">
+    <h2>Experience &amp; Education</h2> 
+    <p>Professional and educational experience depicted over time. Map points include a popup with information that be accessed via the timeslider and/or a map click. Interact with the map and time series, or through a list.</p>
+</mat-card>
+
+<!-- Map/List button group -->
+<mat-card class="mat-elevation-z0">
+<mat-button-toggle-group #displayType="matButtonToggleGroup" name="type" aria-label="Display type">
+    <mat-button-toggle value="map" checked>Map</mat-button-toggle>
+    <mat-button-toggle value="list">List</mat-button-toggle>
+    <mat-button-toggle value="both">Both</mat-button-toggle>
+</mat-button-toggle-group>
+</mat-card>
+
+
+<!-- Map view -->
+<mat-card class="mat-elevation-z0" *ngIf="displayType.value !== 'list'">
+    <button mat-raised-button color="accent" (click)="playTime();"><mat-icon>{{ playStatus === 'Play' ? 'play_circle_filled' : 'pause_circle_filled' }}</mat-icon> {{playStatus}} timeline</button>
+</mat-card>
+<div class="container" [ngClass]="{'visually-hidden': displayType.value === 'list'}">
+    <div id="viewDiv"></div>
+</div>
+
+<div class="slideContainer" [ngClass]="{'visually-hidden': displayType.value === 'list'}"> <!-- Time slider -->
+    <div id="timeSlider"></div> 
+</div>
+
+<!-- List view -->
+<mat-card id="listCard" class="mat-elevation-z0" [ngClass]="{'visually-hidden': displayType.value === 'map'}">
+    <mat-table id="listTable" [dataSource]="locationItems">
+        <ng-container matColumnDef="name">
+            <mat-header-cell *matHeaderCellDef class="visually-hidden">Position/Degree</mat-header-cell>
+            <mat-cell *matCellDef="let locationItem"><b>{{locationItem.desc}}</b>, {{locationItem.name}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="location">
+            <mat-header-cell *matHeaderCellDef class="visually-hidden">Location</mat-header-cell>
+            <mat-cell *matCellDef="let locationItem">{{locationItem.location}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="timeLength">
+            <mat-header-cell *matHeaderCellDef class="visually-hidden">Date range</mat-header-cell>
+            <mat-cell *matCellDef="let locationItem">{{locationItem.timeText}}</mat-cell>
+        </ng-container>
+        <mat-header-row *matHeaderRowDef="locationItemsColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: locationItemsColumns"></mat-row>
+    </mat-table>
+</mat-card>
