@@ -8,6 +8,7 @@
         <div class="divAlign">
             <a *ngFor="let socialPlatform of socialPlatforms" mat-flat-button href="{{socialPlatform.url}}" target="_blank">
                 <fa-icon [icon]="socialPlatform.icoName" size="2x"></fa-icon>
+                <span class="visually-hidden">{{socialPlatform.name}}</span>
             </a>
         </div>
 
