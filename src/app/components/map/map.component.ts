@@ -193,13 +193,19 @@ export class MapComponent implements OnInit {
 
   /* Time slider widget */
   loadTimeSlider() {
+
+    // Set Timeslider end date
+    let endTimeDate = new Date();
+    endTimeDate.setMonth(endTimeDate.getMonth() + 1); // Current date + 1 month
+    endTimeDate.setHours(0, 0, 0, 0); // Set time to 00:00
+
     this.timeSlider = new TimeSlider({
       container: "timeSlider",
       layout: "compact",
       playRate: 2000,
       fullTimeExtent: {
         start: new Date(2003, 0, 1),
-        end: new Date(2023, 0, 1)
+        end: endTimeDate
       },
       timeExtent: {
         start: new Date(2003, 0, 1),
