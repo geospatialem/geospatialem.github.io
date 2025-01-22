@@ -13,12 +13,12 @@ export class ProjectsComponent implements OnInit {
     { "name": "Accessible Web Apps with Maps SDK for JS and Calcite", 
       "url": "https://geospatialem.github.io/build-a11y-web-maps-sdk-js-calcite-ds-2024/", 
       "img": "highcontrast.png", 
-      "desc": "A set of apps built with accessibility in mind with Maps SDK for JavaScript and Calcite Design System at the 2024 Esri Developer Summit. Includes samples on high contrast support, consistent focus, map description and live regions, and reduced motion. Co-presented with Kelly Hutchins." 
+      "desc": "A set of apps built with accessibility in mind with Maps SDK for JavaScript and Calcite Design System at the 2024 Esri Developer Summit. Includes samples on high contrast support, consistent focus, live regions, and reduced motion." 
     },
     { "name": "Calcite Accessibiity Audit Samples", 
       "url": "https://geospatialem.github.io/calcite-samples/", 
       "img": "calcitesamples.png", 
-      "desc": "Calcite Design System's component samples containing multiple configurations. Created for accessibility testing for a third party vendor accessibility audit conducted in 2022 for Calcite's Accessibility Conformance Report delivery." 
+      "desc": "Calcite Design System's component samples containing multiple configurations. Created for accessibility testing through a third party vendor accessibility audit in 2022 for Calcite's Accessibility Conformance Report (ACR) delivery." 
     },
     { 
       "name": "Watershed Health Assessment Framework", 
@@ -60,7 +60,7 @@ export class ProjectsComponent implements OnInit {
       "name": "Places to Visit",
       "url": "https://geospatialem.github.io/places",
       "img": "places.png",
-      "desc": "A map comprised of a collection of places to visit among my two passions - Major League Baseball (MLB) stadiums with my husband, and Minnesota's State Parks, Recreation Areas, and State Waysides. Each point is depicted with a status of visited, planned and remaining."  
+      "desc": "A collection of places to visit among my two passions - Major League Baseball (MLB) stadiums with my husband, and Minnesota's State Parks. Each point is depicted with a status of visited, planned and remaining."  
     },
     { 
       "name": "Minnesota GIS/LIS Attendees",
