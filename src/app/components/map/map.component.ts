@@ -235,7 +235,8 @@ export class MapComponent implements OnInit {
           new Date(2013, 6, 1),
           new Date(2016, 11, 1),
           new Date(2020, 3, 1),
-          new Date(2022, 3, 1)
+          new Date(2022, 3, 1),
+          new Date(2025, 1, 1)
         ]
       }
     });
