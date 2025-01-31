@@ -148,7 +148,7 @@ export class MapComponent implements OnInit {
       "img": "esri.jpg",
       "location": "Minneapolis, Minnesota",
       "timeStart": "03/01/2022",
-      "timeEnd": "01/01/2025",
+      "timeEnd": "12/31/2024",
       "timeText": "March 2022 — January 2025",
       "lat": 44.9808,
       "lng": -93.2533 
